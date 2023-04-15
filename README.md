@@ -9,6 +9,7 @@ The scraper collects the following data about companies:
 * Phone
 * Revenue
 * Number of employees
+* Industry
 * Website
 
 As a result, it generates a separate CSV file for every company from the input list. These files are 
