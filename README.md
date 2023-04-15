@@ -21,7 +21,7 @@ For example - Amazon.csv, Google.csv, etc.
 * rotating-free-proxies 0.1.2
 
 ## How to install and run
-1. Clone the repo: `git clone https://github.com/dfesenko/zoominfo_scraper.git`. 
+1. Clone the repo: `git clone https://github.com/ct-ucsd/zoominfo_scraper.git`. 
 Go inside the `zoominfo_scraper` folder: `cd zoominfo_scraper`.
 2. Create a virtual environment: `python -m venv venv`.
 3. Activate virtual environment: `source venv/bin/activate`.
