@@ -22,9 +22,9 @@ class ZoominfoSpider(scrapy.Spider):
         yield {
             'company': kwargs['company'],
             'headquarters': response.xpath("//h3[text()='Headquarters']/following-sibling::div/span/text()").get(),
-            'phone': response.xpath("//h3[text()='Phone']/following-sibling::div/span/text()").get(),
+            'phone': response.xpath("//h3[text()='Phone Number']/following-sibling::div/span/text()").get(),
             'revenue': response.xpath("//h3[text()='Revenue']/following-sibling::div/span/text()").get(),
-            'employees_num': response.xpath("//h3[text()='Employees']/following-sibling::div/span/text()").get(),
-            'website': response.xpath("//h3[text()='Website']/following-sibling::a/text()").get(),
-            'industry': response.xpath("//*[@id='left-container']/div[1]/app-company-overview/div/div/div/div[1]/div[1]").get()
+            'employees_num': response.xpath("//h3[text()='Revenue']/following-sibling::div/span/text()").get(),
+            'website': response.xpath("//h3[text()='Website']/following-sibling::div/span/text()div/a/text()").get(),
+            'industry': response.xpath("//*[@id="left-container"]/div[1]/app-company-overview/div/div/div/div[1]/div[1]/following-sibling::a/text()").get()
         }
