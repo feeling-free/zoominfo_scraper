@@ -1,4 +1,4 @@
-# zoominfo-scrapper
+# zoominfo-scraper
 Simple scraper for collecting data about the companies specified in the `input.csv` file from
 the https://www.zoominfo.com/ website. 
 
