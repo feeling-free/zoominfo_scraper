@@ -1,4 +1,7 @@
 # zoominfo-scraper
+
+## this is forked from dfesenko/zoominfo_scraper
+
 Simple scraper for collecting data about the companies specified in the `input.csv` file from
 the https://www.zoominfo.com/ website. 
 
