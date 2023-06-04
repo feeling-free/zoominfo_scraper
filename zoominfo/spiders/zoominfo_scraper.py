@@ -6,7 +6,7 @@ class ZoominfoSpider(scrapy.Spider):
         with open("input.csv", 'r') as input_file:
             for company_name in input_file:
                 company = company_name.strip()
-                url = f"https://www.google.com.ua/search?q={company + '+zoominfo+overview'}"
+                url = f"https://www.google.com/search?q={company + '+zoominfo+overview'}"
                 req = scrapy.Request(url=url, callback=self.parse_google_results, cb_kwargs={"company": company})
                 req.meta['proxy'] = None
                 yield req
