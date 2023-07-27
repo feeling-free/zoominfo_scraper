@@ -28,7 +28,7 @@ For example - Amazon.csv, Google.csv, etc.
 1. Clone the repo: `git clone https://github.com/ct-ucsd/zoominfo_scraper.git`. 
 Go inside the `zoominfo_scraper` folder: `cd zoominfo_scraper`.
 2. Create a virtual environment: `python -m venv venv`.
-3. Activate virtual environment: `source venv/bin/activate`.
+3. Activate virtual environment: `source venv/bin/activate` or `venv\Scripts\activate`
 4. Install dependencies into the virtual environment: 
 `pip install -r requirements.txt`.
 5. Change directory: `cd zoominfo`.
