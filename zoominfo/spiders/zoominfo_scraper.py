@@ -24,5 +24,5 @@ class ZoominfoSpider(scrapy.Spider):
             'revenue': response.xpath("//*[@class='vertical-gap']/descendant::span/text()").getall(),
             'employees_num': response.xpath("//h3[text()='Employees']/following-sibling::div[1]/span/text()").getall(),
             'website': response.xpath("//*[@class='vertical-gap website-link']/descendant::a/text()").getall(),
-            'industry': response.xpath("//div[@class='company-chips-wrapper']/descendant-or-self::div/a/text()").getall()
+            'industry': response.xpath("//div[@class='company-chips-wrapper']/descendant-or-self::a/text()").getall()
         }
